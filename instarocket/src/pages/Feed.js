@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import api from '../services/api';
-
 import { View, Image, TouchableOpacity, FlatList, Text, StyleSheet } from 'react-native';
 
 import camera from '../assets/camera.png';
@@ -8,9 +7,6 @@ import more from '../assets/more.png';
 import like from '../assets/like.png';
 import comment from '../assets/comment.png';
 import send from '../assets/send.png';
-
-
-
 
 export default class Feed extends Component {
     static navigationOptions = ({navigation}) => ({
@@ -38,6 +34,9 @@ export default class Feed extends Component {
   render() {
     return (
     <View style={styles.container}>
+
+<Text>Fábio pereira barros</Text>
+
         <FlatList 
         data={ this.state.feed } 
         keyExtractor={post => post._id}
